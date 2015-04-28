@@ -3001,7 +3001,7 @@ the specific language governing permissions and limitations under the Apache Lic
             this.nextSearchTerm = this.opts.nextSearchTerm(data, this.search.val());
 
             // If ctrlKey is pressed, don't close the select dropdown and let the user select more options
-            if(options.ctrlKey) {
+            if(options && options.ctrlKey) {
                 this.clearSearch();
                 this.opts.closeOnSelect = false;
             } else {
